@@ -1,4 +1,4 @@
-ascii_map = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "ä", "ö", "å"]
+ascii_map = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "å", "ä", "ö"]
 
 
 def index_of_letter(input_letter):
@@ -12,6 +12,6 @@ def encrypt_phrase(input_phrase, input_key):
         print(shift_letter(input_phrase[i], input_key[i % len(input_key)]))
     print(input_phrase)
 
-input_phrase = "test"
-input_key = "bb"
+input_phrase = "happy"
+input_key = "no"
 encrypt_phrase(input_phrase, input_key)
